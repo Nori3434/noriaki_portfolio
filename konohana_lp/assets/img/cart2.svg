@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102.916" height="77.788" viewBox="0 0 102.916 77.788">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.184" y1="0.231" x2="0.873" y2="0.721" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#906b30"/>
+      <stop offset="1" stop-color="#624d29"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="長方形_54" data-name="長方形 54" class="cls-1" width="97.221" height="69.579"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_81" data-name="グループ 81" transform="translate(2.847 4.104)">
+    <g id="グループ_81-2" data-name="グループ 81" class="cls-2" transform="matrix(0.996, 0.087, -0.087, 0.996, 3.217, -4.104)">
+      <path id="パス_15748" data-name="パス 15748" class="cls-1" d="M96.962,27.883a27.306,27.306,0,0,0-2.68-11.026A28.168,28.168,0,0,0,87.017,8,36.9,36.9,0,0,0,63.578,0,38.5,38.5,0,0,0,48.261,3.091a34.954,34.954,0,0,0-3.483,1.736C40.1,7.5,36.144,8.191,28.844,9.037c-6.534.758-13.988,2.149-19.736,6.728A22.485,22.485,0,0,0,1.02,28.972,47.622,47.622,0,0,0,.64,46.516C1.587,51.89,5,56.474,8.888,60.255c3.207,3.118,8.329,5.523,15.223,7.146a93.045,93.045,0,0,0,20.863,2.179,104.133,104.133,0,0,0,24.219-2.707c8.084-1.97,14.312-4.912,18.01-8.508,2.746-2.67,5.354-5.344,7.078-8.691,3.413-6.623,3.118-14.574,2.68-21.791" transform="translate(0)"/>
+    </g>
+  </g>
+</svg>

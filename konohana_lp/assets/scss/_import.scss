@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+//layout
+$breakpoint-xxl: 'only screen and (min-width:1600px)';
+$breakpoint-xl: 'only screen and (min-width:1280px)';
+$breakpoint-lg: 'only screen and (min-width:960px)';
+$breakpoint-hs: 'only screen and (max-width:760px)';
+$breakpoint-tb: 'only screen and (min-width:560px)';
+$breakpoint-sm: 'only screen and (max-width:560px)';
+
+
+
+//color 
+$key1 : #c10206;//赤
+$key2 : #20723c;//緑
+$key3 : #f2dd3c;//黄
+$base1: #f4f1e9;//生成色
+$base2: #eae5d6;//baseの濃い
+$text : #4A423E;//黒
+
+
+//font family
+$family1 : "Yu Gothic",sans-serif;
+$family2 : "Ten Mincho", sans-serif;

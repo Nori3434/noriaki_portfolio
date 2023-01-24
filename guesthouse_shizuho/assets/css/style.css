@@ -1,0 +1,1038 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: calc(100vw / 37.5); }
+
+body {
+  position: relative;
+  background-color: #FFFFFF;
+  font-family: "Tsukushi B Round Gothic", "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #0A1612;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+  font-smoothing: antialiased;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: all .3s; }
+
+a {
+  color: #0A1612;
+  display: block; }
+
+h2 {
+  font-size: 4.625em;
+  font-weight: bold;
+  line-height: 1.1212;
+  color: #F4EDD7;
+  position: relative;
+  margin-bottom: 4.8rem; }
+  h2 span {
+    font-size: .2253em;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    position: absolute;
+    color: #FFFFFF;
+    left: 0;
+    bottom: 0;
+    padding: 0 .5rem;
+    background-color: #1A392F; }
+
+.inner {
+  width: calc(100% - 4.8rem);
+  margin: 0 auto;
+  padding-top: 7rem;
+  padding-bottom: 6rem; }
+
+header .hd_bnr {
+  color: #FFFFFF;
+  background: #1A392F;
+  position: relative;
+  z-index: 2;
+  padding: .5rem 1.4rem;
+  padding-bottom: 0; }
+  header .hd_bnr p {
+    font-family: "Noto Serif Myanmar", sans-serif;
+    font-size: .75em;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: .5rem;
+    line-height: 1.2424em;
+    letter-spacing: .1em; }
+    header .hd_bnr p a {
+      color: #FFFFFF;
+      display: inline; }
+  header .hd_bnr:nth-child(2) {
+    background: #C1AA5B; }
+header .hd-bar {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  header .hd-bar .sb-logo {
+    position: relative;
+    max-width: 16.35rem;
+    height: 4.296rem;
+    margin-top: .73rem;
+    margin-left: 2.4rem; }
+    header .hd-bar .sb-logo img:nth-child(2) {
+      max-width: 9.5rem;
+      min-height: 1.3rem;
+      position: absolute;
+      left: 20.9480%;
+      top: 70.2979%; }
+header .btn-menu.active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
+  header .btn-menu.active span:nth-child(1) {
+    -webkit-transform: translateY(100%) rotate(-45deg);
+    transform: translateY(100%) rotate(-45deg); }
+  header .btn-menu.active span:nth-child(2) {
+    -webkit-transform: translateY(-125%) rotate(45deg);
+    transform: translateY(-125%) rotate(45deg); }
+header button {
+  position: absolute;
+  top: 1.5rem;
+  z-index: 6;
+  width: 3rem;
+  height: 1rem;
+  padding: 1rem .5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all .3s; }
+  header button span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .3rem;
+    background: #000000;
+    border-radius: 2rem; }
+    header button span:nth-child(1) {
+      top: 25%; }
+    header button span:nth-child(2) {
+      bottom: 25%; }
+header .tp-pg-btn {
+  margin-right: 1.5rem;
+  right: 0; }
+header .sb-pg-btn {
+  margin-right: 1.5rem; }
+header .fixed {
+  position: fixed;
+  top: 1.5rem;
+  right: 0; }
+header nav {
+  width: 0;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+  background-color: #FFFFFF;
+  top: 0;
+  right: 0;
+  text-align: center;
+  transition: .1s;
+  overflow: hidden; }
+  header nav ul {
+    width: calc(100% - 4.8rem);
+    margin: 28% auto; }
+    header nav ul li {
+      border-bottom: .1rem solid #E2DABF; }
+      header nav ul li a {
+        padding-top: 1.8rem;
+        padding-bottom: 2.4rem;
+        font-family: "Noto Serif Myanmar", sans-serif; }
+        header nav ul li a:hover {
+          opacity: .5;
+          transition: all .3; }
+        header nav ul li a p {
+          padding-top: .7em; }
+        header nav ul li a img {
+          position: relative;
+          max-height: 1em;
+          max-width: 1em; }
+  header nav.open-menu {
+    width: 100%;
+    transition: .3s;
+    position: fixed;
+    z-index: 5; }
+
+.sp-fb-cov a {
+  position: relative; }
+  .sp-fb-cov a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 6;
+    left: 9.73em;
+    top: 1.12em;
+    width: 100%;
+    height: 1em;
+    background-image: url("../img/fb_icon_b.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+.fix-btn {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  z-index: 5;
+  bottom: 0;
+  height: 5.8rem; }
+  .fix-btn a {
+    display: block;
+    border: .1rem solid #FFFFFF;
+    font-family: "Noto Serif Myanmar", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 4.2;
+    text-align: center;
+    text-indent: 2.8rem; }
+  .fix-btn .tel {
+    width: 100%;
+    background-color: #DF5B4C;
+    position: relative; }
+    .fix-btn .tel::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 32.2413%;
+      left: 22.7733%;
+      width: 15.36%;
+      height: 35.6034%;
+      background-image: url("../img/reserve_tel.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+  .fix-btn .pc {
+    width: 100%;
+    background-color: #003580;
+    position: relative; }
+    .fix-btn .pc::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 32.2413%;
+      left: 22.7733%;
+      width: 13.6373%;
+      height: 33.8793%;
+      background-image: url("../img/reserve_pc.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+
+#Top {
+  padding-bottom: 6rem; }
+  #Top .inner {
+    padding: 0; }
+    #Top .inner .hd_logo {
+      width: calc(100% - 9.6rem);
+      margin: 0 auto;
+      position: relative;
+      top: -2.2rem;
+      z-index: 0; }
+      #Top .inner .hd_logo a img {
+        display: block; }
+        #Top .inner .hd_logo a img:nth-child(2) {
+          width: 81%;
+          margin: 1rem auto; }
+        #Top .inner .hd_logo a img:nth-child(3) {
+          width: 43.369%;
+          margin: 0 auto; }
+    #Top .inner .concept {
+      margin-top: 7.7rem; }
+      #Top .inner .concept h1 {
+        font-size: 1.125em;
+        letter-spacing: .02em; }
+      #Top .inner .concept p {
+        font-size: .75em;
+        margin-top: 1.5rem;
+        line-height: 2.1666;
+        letter-spacing: .02em; }
+  #Top .top-pic {
+    width: 100%;
+    margin-top: 2rem;
+    position: relative; }
+    #Top .top-pic::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 32.752%;
+      height: 50.259%;
+      bottom: .25rem;
+      right: 0;
+      background-image: url("../img/ine-mv.png");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        #Top .top-pic::after {
+          background-image: url("../img/ine-mv@2x.png"); } }
+
+#Room {
+  background-color: #E2DABF; }
+  #Room .inner figure {
+    margin-bottom: 4rem;
+    position: relative; }
+    #Room .inner figure p {
+      position: absolute;
+      top: 52.0833%;
+      width: 100%;
+      height: 3.6rem; }
+    #Room .inner figure:nth-child(1) figcaption::before {
+      content: "3人部屋/全4室";
+      display: block; }
+    #Room .inner figure:nth-child(2) figcaption::before {
+      content: "5人部屋/全2室";
+      display: block; }
+    #Room .inner figure:nth-child(3) {
+      margin-bottom: 6rem; }
+    #Room .inner figure figcaption {
+      position: absolute;
+      top: 32.5%;
+      left: 33.1804%;
+      color: #FFFFFF; }
+    #Room .inner figure .radi-btn {
+      display: block;
+      margin: 0 auto;
+      width: 11.643rem;
+      height: 3.6rem;
+      border: .1rem solid #FFFFFF;
+      border-radius: 2rem;
+      top: 51.6666%;
+      left: 32.2018%;
+      font-family: "Noto Serif Myanmar", sans-serif;
+      font-size: .75em;
+      line-height: 3.5em;
+      letter-spacing: .1em;
+      color: #FFFFFF;
+      text-align: center; }
+  #Room .inner .btn-cover .box-btn {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 11rem;
+    background-color: #1A392F;
+    color: #FFFFFF;
+    line-height: 6.875em;
+    letter-spacing: .05em; }
+    #Room .inner .btn-cover .box-btn:nth-child(1) {
+      margin-bottom: 3rem; }
+      #Room .inner .btn-cover .box-btn:nth-child(1) p::before {
+        content: "一覧を見る";
+        display: block; }
+    #Room .inner .btn-cover .box-btn:nth-child(2) {
+      margin-bottom: 0; }
+      #Room .inner .btn-cover .box-btn:nth-child(2) p::before {
+        content: "館内設備を見る";
+        display: block; }
+    #Room .inner .btn-cover .box-btn::before {
+      content: "";
+      display: block;
+      width: 37.7%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("../img/ine_btn.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      mix-blend-mode: soft-light; }
+      @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+        #Room .inner .btn-cover .box-btn::before {
+          background-image: url("../img/ine_btn@2x.png"); } }
+    #Room .inner .btn-cover .box-btn::after {
+      content: "";
+      display: block;
+      width: .5rem;
+      height: .855rem;
+      position: absolute;
+      right: 6.9724%;
+      top: 47%;
+      background-image: url("../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain; }
+
+#Charge .inner .charge-wrap dl {
+  display: flex;
+  font-size: .875em;
+  justify-content: space-between;
+  padding: 1.8rem 2.56rem 2.4rem 2rem;
+  border-bottom: .1rem solid #E3DFDD; }
+  #Charge .inner .charge-wrap dl:nth-child(1) {
+    padding-top: 0; }
+#Charge .inner .caution {
+  margin-top: 1.8rem;
+  margin-left: 50%;
+  font-size: .625em; }
+  #Charge .inner .caution p:nth-child(1) {
+    margin-bottom: 1rem; }
+
+#Access .inner .a-address {
+  font-size: .875em;
+  line-height: 1.7142;
+  margin-bottom: 2rem; }
+#Access .inner .g-map {
+  position: relative;
+  height: 0;
+  padding-bottom: 67.2782%;
+  overflow: hidden; }
+  #Access .inner .g-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+#Access .inner .root {
+  margin-top: 2rem; }
+  #Access .inner .root p {
+    font-size: .75em;
+    line-height: 1.7142; }
+    #Access .inner .root p:nth-child(1) {
+      font-size: .875em;
+      font-weight: bold; }
+#Access .inner .tour {
+  margin-top: 8rem; }
+  #Access .inner .tour h3 {
+    font-weight: bold;
+    margin-bottom: 3rem; }
+  #Access .inner .tour figure {
+    width: 100%;
+    height: 31.1rem;
+    border: .1rem solid #707070;
+    margin-bottom: 5rem; }
+    #Access .inner .tour figure:nth-child(3) {
+      margin-bottom: 0; }
+    #Access .inner .tour figure img {
+      max-height: 64.3086%; }
+    #Access .inner .tour figure figcaption {
+      font-size: .875em;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem; }
+    #Access .inner .tour figure .radi-btn {
+      display: block;
+      text-align: center;
+      position: relative;
+      font-size: .75em;
+      width: 17rem;
+      margin: 0 auto;
+      color: #FFFFFF;
+      background-color: #1A392F;
+      border-radius: 2.1rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem; }
+      #Access .inner .tour figure .radi-btn::after {
+        content: "";
+        display: block;
+        width: .5rem;
+        height: .855rem;
+        position: absolute;
+        right: 8.8235%;
+        top: 39.7619%;
+        background-image: url("../img/arrow.svg");
+        background-repeat: no-repeat;
+        background-size: contain; }
+
+footer {
+  margin-top: 12rem;
+  padding-top: 6rem;
+  padding-bottom: 15.6rem;
+  background-image: url("../img/ft_pic_sp.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    footer {
+      background-image: url("../img/ft_pic_sp@2x.jpg"); } }
+  footer p {
+    text-align: center;
+    font-size: .75em; }
+  footer .ft-logo a {
+    display: block; }
+  footer .ft-address {
+    margin: 7rem 0 5rem 0; }
+    footer .ft-address p {
+      line-height: 1.8333;
+      letter-spacing: .05em; }
+  footer .copyright p {
+    line-height: 1.6666;
+    letter-spacing: .1em; }
+
+#Main-room .inner {
+  padding-top: 6.38rem;
+  padding-bottom: 0; }
+  #Main-room .inner h2 {
+    margin-bottom: 7rem; }
+  #Main-room .inner ul li {
+    padding-bottom: 6rem;
+    margin-bottom: 4rem;
+    border-bottom: .1rem solid #E3DFDD; }
+    #Main-room .inner ul li:nth-child(2) {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border: none; }
+    #Main-room .inner ul li .txt-box {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap; }
+      #Main-room .inner ul li .txt-box p {
+        font-size: .75em; }
+        #Main-room .inner ul li .txt-box p:nth-child(1) {
+          width: 39.1437%;
+          font-size: 1em;
+          font-weight: bold; }
+        #Main-room .inner ul li .txt-box p:nth-child(2) {
+          width: 50%;
+          padding-top: .3em;
+          margin-left: 1rem; }
+        #Main-room .inner ul li .txt-box p:nth-child(3) {
+          margin-top: 1.5rem;
+          line-height: 3.3333; }
+
+#Facility .inner {
+  padding-top: 6.38rem;
+  padding-bottom: 0; }
+  #Facility .inner h2 {
+    margin-bottom: 7rem; }
+  #Facility .inner .facility-container {
+    padding-bottom: 6rem; }
+    #Facility .inner .facility-container .f-flex {
+      margin-top: 4rem;
+      padding-bottom: 6rem;
+      border-bottom: .1rem solid #E3DFDD; }
+      #Facility .inner .facility-container .f-flex ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        #Facility .inner .facility-container .f-flex ul li:nth-child(1) {
+          width: 100%; }
+        #Facility .inner .facility-container .f-flex ul li:nth-child(2), #Facility .inner .facility-container .f-flex ul li:nth-child(3) {
+          width: 48.0122%;
+          margin-top: 1rem; }
+      #Facility .inner .facility-container .f-flex .f-txt {
+        margin-top: 2rem; }
+        #Facility .inner .facility-container .f-flex .f-txt p {
+          font-weight: bold; }
+          #Facility .inner .facility-container .f-flex .f-txt p:nth-child(2) {
+            line-height: 1.6666;
+            margin-top: 1.5rem;
+            font-size: .75em;
+            font-weight: normal; }
+    #Facility .inner .facility-container .shower {
+      padding-bottom: 0;
+      border-bottom: none; }
+#Facility .f-txt-container {
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  background-color: rgba(26, 57, 47, 0.1); }
+  #Facility .f-txt-container ul {
+    width: calc(100% - 4.8rem);
+    margin: 0 auto; }
+    #Facility .f-txt-container ul li {
+      display: flex;
+      width: calc(100% - 4.8rem);
+      margin: 0 auto;
+      padding-top: 1.8rem;
+      padding-bottom: 2.4rem;
+      border-bottom: .1rem solid #E3DFDD; }
+      #Facility .f-txt-container ul li p {
+        font-size: .75em;
+        width: 50%;
+        letter-spacing: .01em;
+        line-height: 1.6666; }
+      #Facility .f-txt-container ul li div {
+        width: 50%; }
+        #Facility .f-txt-container ul li div p {
+          width: 100%; }
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 62.5%; }
+
+  h2 {
+    font-size: 7.3125em;
+    margin-bottom: 6.7rem; }
+
+  .inner {
+    width: calc(100% - 40.6rem);
+    max-width: 96rem;
+    margin: 0 auto;
+    padding-top: 10rem;
+    padding-bottom: 12rem; }
+
+  .only-sp {
+    display: none; }
+
+  .only-top::before {
+    background-color: #FFFFFF; }
+  .only-top a {
+    color: #FFFFFF !important; }
+
+  .only-pc {
+    display: block; }
+
+  header {
+    position: relative; }
+    header .hd_bnr {
+      padding-top: 2.5rem;
+      height: 6.4rem;
+      max-height: 6.4rem; }
+      header .hd_bnr p {
+        text-align: center;
+        font-size: 1em; }
+    header .hd-bar {
+      display: block;
+      height: 1.6rem;
+      position: relative; }
+      header .hd-bar nav ul li a {
+        color: #0A1612; }
+      header .hd-bar .sb-logo {
+        position: absolute;
+        max-width: 22.018rem;
+        height: 5.457rem;
+        margin-top: 3rem;
+        margin-left: 4rem; }
+        header .hd-bar .sb-logo img:nth-child(2) {
+          max-width: 12rem;
+          min-height: 1.3rem;
+          position: absolute;
+          left: 20.9480%;
+          top: 70.2979%; }
+      header .hd-bar .logo-fixed {
+        position: fixed;
+        top: 0;
+        left: 0; }
+    header nav {
+      position: absolute;
+      width: 100%;
+      min-width: 50.5rem;
+      max-width: 50.5rem;
+      top: 5.9rem;
+      height: 2em;
+      right: 3.9531%;
+      overflow-x: hidden;
+      background-color: transparent; }
+      header nav ul {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        header nav ul li {
+          border: none;
+          position: relative; }
+          header nav ul li a {
+            padding: 0; }
+            header nav ul li a img {
+              padding: 0;
+              margin-top: .5rem; }
+          header nav ul li::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 1rem;
+            height: .1rem;
+            top: .8em;
+            left: -2.5em;
+            background-color: #0A1612; }
+    header .fixed {
+      position: relative;
+      top: 0; }
+
+  .fix-btn {
+    width: 6.4rem;
+    height: 6.4rem;
+    flex-flow: column;
+    right: 4.6852%;
+    top: 40%; }
+    .fix-btn a {
+      border: .1rem solid #FFFFFF;
+      font-family: "Noto Serif Myanmar", sans-serif;
+      font-size: .625em;
+      color: #FFFFFF;
+      text-indent: 0;
+      line-height: 10; }
+    .fix-btn .tel {
+      border-radius: 50%;
+      height: 6.4rem; }
+      .fix-btn .tel::before {
+        top: 20.3125%;
+        left: 23.5937%;
+        width: 2.835rem;
+        height: 2.191rem; }
+      .fix-btn .tel:hover {
+        opacity: .7; }
+    .fix-btn .pc {
+      border-radius: 50%;
+      margin-top: 3.2rem;
+      height: 6.4rem; }
+      .fix-btn .pc::before {
+        top: 20.3125%;
+        left: 26.4062%;
+        width: 3.021rem;
+        height: 2.276rem; }
+      .fix-btn .pc:hover {
+        opacity: .7; }
+
+  #Top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10rem; }
+    #Top .inner {
+      margin: 0; }
+      #Top .inner .hd_logo {
+        width: 100%;
+        max-width: 51.3rem;
+        margin-top: -2rem;
+        margin-left: -2rem; }
+        #Top .inner .hd_logo a {
+          position: relative;
+          display: block; }
+          #Top .inner .hd_logo a img:nth-child(2) {
+            width: 76.0233%;
+            margin-left: 17.1539%;
+            margin-top: 3.8rem; }
+          #Top .inner .hd_logo a img:nth-child(3) {
+            width: 32.9434%;
+            margin-left: 38.7914%;
+            margin-top: 1.05rem; }
+      #Top .inner .concept {
+        margin-top: 18.2971%;
+        margin-left: 11.89%; }
+        #Top .inner .concept h1 {
+          font-size: 2em; }
+        #Top .inner .concept p {
+          max-width: 39.1rem;
+          font-size: 1em;
+          line-height: 1.375;
+          letter-spacing: .1em; }
+    #Top .top-pic {
+      margin-left: 6.2rem;
+      margin-top: -2rem;
+      max-width: 81.1rem;
+      max-height: 59.9rem;
+      overflow: hidden; }
+      #Top .top-pic img {
+        max-height: 59.9rem;
+        max-width: 81.1rem; }
+      #Top .top-pic::after {
+        width: 37.688%;
+        height: 45.409%;
+        bottom: -2rem;
+        right: -2rem; }
+
+  #Room {
+    background-color: #E2DABF; }
+    #Room .inner {
+      padding-top: 5.4rem; }
+      #Room .inner .r-wrap {
+        display: flex; }
+        #Room .inner .r-wrap figure {
+          width: 33.3333%;
+          margin-bottom: 0; }
+          #Room .inner .r-wrap figure figcaption {
+            display: block;
+            width: 100%;
+            text-align: center;
+            left: 0; }
+          #Room .inner .r-wrap figure:nth-child(2) {
+            margin-left: 2rem; }
+          #Room .inner .r-wrap figure p {
+            position: absolute;
+            top: 52.0833%;
+            width: 100%;
+            height: 3.6rem; }
+            #Room .inner .r-wrap figure p .radi-btn {
+              width: 100%;
+              max-width: 11.643rem;
+              margin: 0 auto; }
+              #Room .inner .r-wrap figure p .radi-btn:hover {
+                background-color: #1A392F;
+                opacity: .7;
+                transition: all .3s;
+                transition-duration: .7s; }
+        #Room .inner .r-wrap .btn-cover {
+          margin-left: 1.7rem;
+          width: 33.3333%;
+          position: relative; }
+          #Room .inner .r-wrap .btn-cover::before {
+            content: "";
+            display: block;
+            padding-top: 75%; }
+          #Room .inner .r-wrap .btn-cover .box-btn {
+            line-height: 4em;
+            font-size: 1em;
+            height: 45.8333%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0; }
+            #Room .inner .r-wrap .btn-cover .box-btn:nth-child(2) {
+              top: 54.1666%; }
+              #Room .inner .r-wrap .btn-cover .box-btn:nth-child(2) p {
+                position: relative;
+                height: 0;
+                width: 100%; }
+                #Room .inner .r-wrap .btn-cover .box-btn:nth-child(2) p::before {
+                  content: "館内設備を見る";
+                  display: block;
+                  height: 100%;
+                  position: relative;
+                  line-height: 0;
+                  padding-top: 18%; }
+            #Room .inner .r-wrap .btn-cover .box-btn:nth-child(1) {
+              margin-bottom: 0; }
+              #Room .inner .r-wrap .btn-cover .box-btn:nth-child(1) p {
+                position: absolute;
+                top: 0;
+                height: 0;
+                width: 100%; }
+                #Room .inner .r-wrap .btn-cover .box-btn:nth-child(1) p::before {
+                  content: "一覧を見る";
+                  display: block;
+                  height: 100%;
+                  position: relative;
+                  line-height: 0;
+                  padding-top: 18%; }
+            #Room .inner .r-wrap .btn-cover .box-btn:hover {
+              opacity: .7; }
+
+  #Charge .inner .charge-wrap dl {
+    position: relative;
+    padding: 3.85rem 0 4.05rem 4.6rem; }
+    #Charge .inner .charge-wrap dl dd {
+      font-size: 1.125em;
+      position: absolute;
+      top: 3.85rem;
+      left: 20.2rem; }
+    #Charge .inner .charge-wrap dl:nth-child(1) dd {
+      top: 0; }
+  #Charge .inner .caution {
+    font-size: .75em;
+    margin-top: 1.5rem;
+    margin-left: 75.2083%; }
+
+  #Access .inner .a-address {
+    display: flex;
+    font-size: 1.125em;
+    line-height: 1.7222;
+    margin-bottom: 3rem; }
+    #Access .inner .a-address p:nth-child(2) {
+      margin-left: .5em; }
+  #Access .inner .g-map {
+    position: relative;
+    height: 0;
+    padding-bottom: 52.0833%;
+    overflow: hidden; }
+    #Access .inner .g-map iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+  #Access .inner .root {
+    margin-top: 3rem; }
+    #Access .inner .root p {
+      font-size: .875em;
+      line-height: 1.7222; }
+      #Access .inner .root p:nth-child(1) {
+        font-size: 1.125em; }
+  #Access .inner .tour {
+    margin-top: 6.75rem; }
+    #Access .inner .tour h3 {
+      font-weight: bold;
+      margin-bottom: 2.6rem;
+      font-size: 1.125em; }
+    #Access .inner .tour div {
+      display: flex;
+      justify-content: space-between; }
+      #Access .inner .tour div figure {
+        width: 31.25%;
+        height: 104.6666%; }
+        #Access .inner .tour div figure figcaption {
+          font-size: 1em;
+          width: 100%;
+          white-space: nowrap; }
+        #Access .inner .tour div figure .radi-btn {
+          width: 44%;
+          min-width: 13.2rem;
+          height: 3.4rem;
+          font-size: .75em;
+          margin: 2.35rem auto;
+          line-height: .35; }
+          #Access .inner .tour div figure .radi-btn:hover {
+            opacity: .7; }
+    #Access .inner .tour figure {
+      border: .1rem solid #707070;
+      margin-bottom: 0; }
+      #Access .inner .tour figure img {
+        max-height: 64.3086%; }
+
+  footer {
+    position: relative;
+    margin-top: 11.65rem;
+    min-height: 29.2rem;
+    padding: 0;
+    background-image: url("../img/ft_pic_pc.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain; } }
+  @media only screen and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2) {
+    footer {
+      background-image: url("../img/ft_pic_pc@2x.jpg"); } }
+@media only screen and (min-width: 960px) {
+    footer .inner {
+      padding: 0;
+      margin: 0; }
+      footer .inner .ft-logo {
+        max-width: 36.3rem;
+        position: absolute;
+        top: 7.45rem;
+        right: 4.6852%; }
+      footer .inner p {
+        font-size: 1em;
+        text-align: right; }
+      footer .inner .ft-address {
+        margin: 0;
+        position: absolute;
+        top: 14.6rem;
+        right: 4.6852%; }
+        footer .inner .ft-address div {
+          display: flex; }
+          footer .inner .ft-address div p {
+            line-height: 1.375;
+            letter-spacing: .05em; }
+      footer .inner .copyright {
+        display: flex;
+        position: absolute;
+        top: 23.9rem;
+        right: 4.6852%; }
+        footer .inner .copyright p {
+          font-size: .75em;
+          line-height: 1.6666;
+          letter-spacing: .1em;
+          text-align: right; }
+
+  #Main-room .inner {
+    width: calc(100% - 58rem); }
+    #Main-room .inner h2 {
+      margin-top: 8.9rem;
+      margin-bottom: 7.4rem; }
+    #Main-room .inner ul {
+      padding-left: 10.4434%;
+      max-width: 80.2rem;
+      min-width: 57rem;
+      padding-top: 10rem;
+      padding-bottom: 10rem; }
+      #Main-room .inner ul li {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 6rem;
+        margin-bottom: 6rem; }
+        #Main-room .inner ul li .txt-box {
+          width: 43.6363%;
+          margin-top: 0;
+          margin-left: 10.3491%;
+          flex-flow: column; }
+          #Main-room .inner ul li .txt-box p {
+            font-size: 1em; }
+            #Main-room .inner ul li .txt-box p:nth-child(1) {
+              width: 100%;
+              font-size: 1.125em;
+              font-weight: bold; }
+            #Main-room .inner ul li .txt-box p:nth-child(2) {
+              width: 100%;
+              padding-top: 0;
+              margin-left: 0;
+              margin-top: 1rem; }
+            #Main-room .inner ul li .txt-box p:nth-child(3) {
+              margin-top: 3rem;
+              line-height: 2.5; }
+
+  #Facility .inner {
+    width: calc(100% - 58rem); }
+    #Facility .inner h2 {
+      margin-top: 8.9rem;
+      margin-bottom: 7.4rem;
+      white-space: nowrap; }
+    #Facility .inner .facility-container {
+      padding-left: 10.4434%;
+      max-width: 80.2rem;
+      min-width: 57rem;
+      padding-top: 10rem;
+      padding-bottom: 12rem; }
+      #Facility .inner .facility-container .f-flex {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 8.9378%;
+        margin-top: 0; }
+        #Facility .inner .facility-container .f-flex:nth-child(1) {
+          padding-bottom: 6rem;
+          border-bottom: none; }
+        #Facility .inner .facility-container .f-flex:nth-child(2) {
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+          border-top: .1rem solid #DEDEDE;
+          border-bottom: .1rem solid #DEDEDE; }
+        #Facility .inner .facility-container .f-flex:nth-child(3) {
+          padding-top: 6rem;
+          border-bottom: none;
+          padding-bottom: 0; }
+        #Facility .inner .facility-container .f-flex ul {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          max-width: 32rem; }
+          #Facility .inner .facility-container .f-flex ul li:nth-child(1) {
+            width: 100%; }
+          #Facility .inner .facility-container .f-flex ul li:nth-child(2) {
+            width: 46.875%;
+            margin-top: 1.5rem; }
+          #Facility .inner .facility-container .f-flex ul li:nth-child(3) {
+            width: 46.875%;
+            margin-top: 1.5rem; }
+      #Facility .inner .facility-container .f-txt {
+        display: flex;
+        flex-flow: column;
+        width: 28.2994%;
+        margin-left: 10.3491%;
+        margin-top: 0 !important; }
+        #Facility .inner .facility-container .f-txt p {
+          line-height: 1.7142; }
+          #Facility .inner .facility-container .f-txt p:nth-of-type(1) {
+            font-weight: bold;
+            white-space: nowrap; }
+          #Facility .inner .facility-container .f-txt p:nth-of-type(2) {
+            font-size: 0.875em !important;
+            margin-top: 3rem !important;
+            min-width: 17rem; }
+  #Facility .f-txt-container {
+    padding-top: 10rem;
+    padding-bottom: 12rem; }
+    #Facility .f-txt-container ul {
+      width: calc(100% - 58rem); }
+      #Facility .f-txt-container ul li {
+        padding-left: 9.3567%;
+        padding-top: 3.85rem;
+        padding-bottom: 4.05rem;
+        min-width: 57rem;
+        max-width: 85.5rem; }
+        #Facility .f-txt-container ul li:nth-child(3) p {
+          white-space: nowrap; }
+        #Facility .f-txt-container ul li p {
+          font-size: 1em;
+          width: 68%; }
+          #Facility .f-txt-container ul li p:nth-of-type(1) {
+            width: 37.1591%; }
+        #Facility .f-txt-container ul li div {
+          width: 68%; } }
