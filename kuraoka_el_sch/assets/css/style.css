@@ -359,7 +359,7 @@ main #Access {
     background-size: contain; }
 
 .totop {
-  display: none; }
+  display: none!important; }
 
 footer {
   padding: 1.5rem;
@@ -889,7 +889,7 @@ footer {
             height: 37rem !important; }
 
   .totop {
-    display: block;
+    display: block!important;
     position: absolute;
     right: 1.5rem;
     bottom: 12.5%;
